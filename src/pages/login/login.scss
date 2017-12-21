@@ -1,0 +1,46 @@
+page-login {
+//   input[type=text],input[type=password]{
+//     width:100%;
+//     border:1px solid #aaa;
+//     border-radius:4px;
+//     margin:8px 0;
+//     outline:none;
+//     padding:8px;
+//     box-sizing:border-box;
+//     transition:.2s;
+//     padding-left: 84px;
+//   }
+
+ button{
+      width: 287px;
+      border-radius:5px !important;
+  }
+
+
+ .buttonclass {
+      width:100% !important;
+      border-radius:5px !important;
+  }
+    
+  ion-icon{
+        font-size: 170%;
+       
+          }
+  ion-input[type=number],ion-input[type=password]{
+    height: 46px;
+  }
+ 
+//   ion-input[type=number]:focus,ion-input[type=password]:focus{
+//     border-color:red;
+//     box-shadow:0 0 8px 0 red;
+//   }
+
+ 
+
+  .glyphicon {
+    font-size: 150%;
+}
+  
+
+
+}

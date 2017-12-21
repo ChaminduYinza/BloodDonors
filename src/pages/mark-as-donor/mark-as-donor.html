@@ -1,0 +1,69 @@
+<ion-header>
+   <ion-navbar>
+      <ion-title >MARK AS DONOR</ion-title>
+      <!-- <span class="glyphicon glyphicon-tint" style="color:red; font-size: 200%; position: absolute;top: 11px;right: 12px;"></span> -->
+
+   </ion-navbar>
+</ion-header>
+<ion-content>
+   <ion-card>
+      <ion-card-content>
+         <ion-list inset>
+            <div class="input-group">
+               <span class="input-group-addon"><span class="glyphicon glyphicon-user" style="size:10px;"></span></span>
+               <ion-input readonly value = {{userArray.name}} id="fullname" type="text" class="form-control" [(ngModel)]="user.name" name="fullname"  required> </ion-input>
+            </div>
+            <br/>
+            <div style="display: flex;  flex-direction:row">
+               <ion-input readonly value = {{userArray.age}} id="age" type="number" class="form-control" [(ngModel)]="user.age" name="user.age"  required> </ion-input>
+               <ion-input readonly value = {{userArray.weight}} style="margin-left: 17px;"id="weight" type="number" class="form-control" [(ngModel)]="user.weight" name="weight" placeholder="Weight" required> </ion-input>
+            </div>
+            <br/>
+            <div class="input-group">
+               <span class="input-group-addon"><span class="glyphicon glyphicon-tint" style="size:10px;"></span></span>
+               <ion-input readonly value = {{bGroup}} id="bloodgroup" type="text" class="form-control" name="bloodgroup"  required> </ion-input>
+            </div>
+            <br/>
+            <br/>
+            <div >
+             <textarea   readonly placeholder= {{userArray.address}} rows="4" cols="37" name="comment"  [(ngModel)]="user.address" >
+             </textarea> 
+           </div>
+            <br/>
+            <div style="display: flex;  flex-direction:row">
+               <!-- <ion-input id="age" type="number" class="form-control" [(ngModel)]="age" name="age" placeholder="Age" required> </ion-input>
+                  <ion-input style="margin-left: 17px;"id="weight" type="number" class="form-control" [(ngModel)]="weight" name="weight" placeholder="Weight" required> </ion-input>
+                  -->
+               <label class="radio-inline">
+               <input type="radio" name="optradio"  [(ngModel)]="user.gender" >Female
+               </label>
+               <label class="radio-inline">
+               <input type="radio" name="optradio" [(ngModel)]="user.gender" >Male
+               </label>
+            </div>
+            <br/>
+            <div class="input-group">
+               <span class="input-group-addon"><span class="glyphicon glyphicon-earphone" style="size:10px;"></span></span>
+               <ion-input readonly value = {{userArray.contact}} id="contact" type="number" class="form-control" [(ngModel)]="user.contact" name="contact"  required> </ion-input>
+            </div>
+            <br/>
+        
+             <div style="display: flex;  flex-direction:row">
+              <label style="color:brown;padding-top:9px"> Mark As Donor</label>
+               <ion-toggle   style="color:black;margin-left:9px" checked="false"></ion-toggle>
+            </div>
+
+  
+
+
+        
+            <br/>
+            <div>
+            <button  type="submit"  (click)="markAsDonor()" class="buttonclass btn btn-danger">Save</button>
+            </div>
+            <br/>
+            <button type="submit"  (click)="route()" class="buttonclass btn btn-default">Cancel</button>
+         </ion-list>
+      </ion-card-content>
+   </ion-card>
+</ion-content>

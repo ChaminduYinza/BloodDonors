@@ -1,0 +1,22 @@
+page-bloodcompatability {
+.home-container {
+     display: -webkit-flex;
+     -webkit-flex-direction: column;
+     height: 100%;
+}
+
+.home-container > .row {
+     -webkit-flex: 1;
+}
+
+
+.icon-row {
+     -webkit-align-items: center;
+}
+
+.title{
+  color:#f53d3d;
+  font-family: "PT Sans Narrow";
+  font-weight: 700;
+}
+}

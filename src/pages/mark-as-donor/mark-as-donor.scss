@@ -1,0 +1,35 @@
+page-mark-as-donor {
+
+    ion-title {
+    color:red;
+}
+
+
+ .buttonclass {
+      width:100% !important;
+      border-radius:5px !important;
+  }
+
+  ion-icon{
+        font-size: 170%;
+       
+          }
+   ion-input[type=text],ion-input[type=number],ion-input[type=password]{
+    height: 46px;
+  }
+
+
+textarea {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+
+}
+
+  .glyphicon {
+    font-size: 150%;
+
+}
+  
+}

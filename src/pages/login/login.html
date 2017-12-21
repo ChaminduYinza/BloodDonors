@@ -1,0 +1,44 @@
+    <ion-header>
+
+  <ion-navbar>
+    <ion-title >LOGIN</ion-title>
+    
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+   <ion-card>
+      <img src="./assets/imgs/bloodLogo.PNG"/>
+      <ion-card-content>
+         <ion-list inset>
+            <div class="input-group">
+               <span class="input-group-addon"><span class="glyphicon glyphicon-phone-alt" style="color:red;size:10px;"></span></span>
+               <ion-input id="Mobile" type="number" class="form-control" [(ngModel)]="mobile" name="Mobile" placeholder="Mobile Number" required> </ion-input>
+            </div>
+            <br/>
+            <div class="input-group">
+               <span class="input-group-addon"><i class="glyphicon glyphicon-lock" style="color:red;"></i></span>
+               <ion-input id="password" type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Password" required> </ion-input>
+            </div>
+            <a style="margin-left:175px;" routerLink="/" class="alc">Forget password?</a>
+            <br>
+            <button type="submit"  (click)="login()" class="buttonclass btn btn-danger">Log in</button>
+            <p style="color:black;">Don't have an account? <a style="color:red;" (click)="register()"routerLink="/" class="alc">Sign up</a>  </p>
+            <!--/form-->
+            <br>
+            <button class="buttonclass btn btn-default" (click)="login()">
+               <ion-icon style="padding-right:10px; color:cornflowerblue;" name="logo-facebook"></ion-icon>
+               Login With Facebook
+            </button>
+            <br>
+            <br>
+            <button class="buttonclass btn btn-default" (click)="login()">
+               <ion-icon style="padding-right:10px; color:brown;" name="logo-googleplus"></ion-icon>
+               Login With Gmail
+            </button>
+         </ion-list>
+      </ion-card-content>
+   </ion-card>
+</ion-content>

@@ -1,0 +1,73 @@
+<ion-header>
+   <ion-navbar>
+      <ion-title >REGISTRATION</ion-title>
+   </ion-navbar>
+</ion-header>
+<ion-content>
+   <ion-card>
+      <ion-card-content>
+         <ion-list inset>
+            <div class="input-group">
+               <span class="input-group-addon"><span class="glyphicon glyphicon-user" style="size:10px;"></span></span>
+               <ion-input  id="fullname" type="text" class="form-control" [(ngModel)]="user.name" name="fullname" placeholder="Full Name" required> </ion-input>
+            </div>
+            <br/>
+            <div style="display: flex;  flex-direction:row">
+               <ion-input id="age" type="number" class="form-control" [(ngModel)]="user.age" name="age" placeholder="Age" required> </ion-input>
+               <ion-input style="margin-left: 17px;"id="weight" type="number" class="form-control" [(ngModel)]="user.weight" name="weight" placeholder="Weight" required> </ion-input>
+            </div>
+            <br/>
+            <div class="input-group">
+               <span class="input-group-addon">Blood Group</span>
+               <ion-select [(ngModel)]="user.bloodgroup">
+               <ion-option value="aPositive">A+</ion-option>
+               <ion-option value="aNegative">A-</ion-option>
+               <ion-option value="bPositive">B+</ion-option>
+               <ion-option value="bNegative">B-</ion-option>
+               <ion-option value="abPositive">AB+</ion-option>
+               <ion-option value="abNegative">AB-</ion-option>
+               <ion-option value="oPositive">O+</ion-option>
+               <ion-option value="oNegative">O-</ion-option>
+               </ion-select>
+            </div>
+            <br/>
+            <div class="input-group">
+               <textarea rows="4" cols="37" name="comment" placeholder="Address" [(ngModel)]="user.address" >
+               </textarea>
+            </div>
+            <br/>
+            <div style="display: flex;  flex-direction:row">
+               
+               <label class="radio-inline">
+               <input type="radio" name="optradio"  [(ngModel)]="user.gender">Female
+               </label>
+               <label class="radio-inline">
+               <input type="radio" name="optradio" [(ngModel)]="user.gender">Male
+               </label>
+            </div>
+            <br/>
+            <div class="input-group">
+               <span class="input-group-addon"><span class="glyphicon glyphicon-earphone" style="size:10px;"></span></span>
+               <ion-input id="contact" type="number" class="form-control" [(ngModel)]="user.contact" name="contact" placeholder="Contact No" required> </ion-input>
+            </div>
+            <br/>
+            <div class="input-group">
+               <span class="input-group-addon"><span class="glyphicon glyphicon-credit-card" style="size:10px;"></span></span>
+               <ion-input id="nic" type="text" class="form-control" [(ngModel)]="user.nic" name="nic" placeholder="NIC" required> </ion-input>
+            </div>
+            <br/>
+            <div class="input-group">
+               <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+               <ion-input id="password" type="password" class="form-control" [(ngModel)]="user.password" name="password" placeholder="Password" required> </ion-input>
+            </div>
+            <br/>
+            <div class="input-group">
+               <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+               <ion-input id="password" type="password" class="form-control" [(ngModel)]="user.password2" name="password2" placeholder="Confirm Password" required> </ion-input>
+            </div>
+            <br>
+            <button type="submit"  (click)="register()" class="buttonclass btn btn-danger">Register</button>
+         </ion-list>
+      </ion-card-content>
+   </ion-card>
+</ion-content>

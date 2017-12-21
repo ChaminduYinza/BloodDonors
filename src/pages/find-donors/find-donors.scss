@@ -1,0 +1,40 @@
+page-find-donors {
+    ion-card-content {
+        display: flex;
+        div.blood-group {
+            height: 70px;
+            width: 70px;
+            background: red;
+            border-radius: 70%;
+            text-align: center;
+            margin-right: 12px;
+            box-shadow: 0px 3px 10px 0px rgba(150,145,150,1);
+            span {
+                line-height: 70px;
+                font-size: 30px;
+                color: #FFF;
+            }
+        }
+        div.donor-content {
+            p {
+                margin: 5px auto;
+                font-size: 16px;
+                span.title {
+                    font-weight: bold;
+                }
+                span.value {
+
+                }
+            }
+        }
+        img.contact-icon {
+            height: 45px;
+            width: 45px;
+            margin: auto;
+        }
+        span.flex {
+            flex: 1;
+        }
+    }
+
+}
