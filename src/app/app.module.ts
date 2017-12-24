@@ -13,11 +13,13 @@ import { EditProfilePage } from '../pages/edit-profile/edit-profile';
 import {ChangePasswordPage } from '../pages/change-password/change-password';
 import { MarkAsDonorPage } from '../pages/mark-as-donor/mark-as-donor';
 import { BloodBanksPage } from '../pages/blood-banks/blood-banks';
-import { RequestBloodPage } from '../pages/request-blood/request-blood'
-import { FindDonorsPage } from '../pages/find-donors/find-donors'
+import { RequestBloodPage } from '../pages/request-blood/request-blood';
+import { FindDonorsPage } from '../pages/find-donors/find-donors';
+import { SearchDonorPage } from '../pages/search-donor/search-donor';
 import { BloodcompatabilityPage } from '../pages/bloodcompatability/bloodcompatability';
-import { SettingsPage } from '../pages/settings/settings'
+import { SettingsPage } from '../pages/settings/settings';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -40,10 +42,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FindDonorsPage,
     RequestBloodPage,
     BloodcompatabilityPage,
+     SearchDonorPage,
     SettingsPage
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     IonicModule.forRoot(MyApp,{
       backButtonText: '',
       backButtonIcon: 'ios-arrow-back',
@@ -66,6 +70,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FindDonorsPage,
     RequestBloodPage,
     BloodcompatabilityPage,
+   SearchDonorPage,
     SettingsPage
   ],
   providers: [

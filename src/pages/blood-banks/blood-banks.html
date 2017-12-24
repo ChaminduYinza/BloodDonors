@@ -11,7 +11,7 @@
 
 
   <ion-navbar padding>
-    <ion-title>FIND DONORS</ion-title>
+    <ion-title>BLOOD BANKS</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -34,7 +34,7 @@
  <ul class="list-group">
   <li *ngFor="let hospitals of hospitalJSON" class="list-group-item justify-content-between">
    {{hospitals.Location}}
-    <span  (click)="alert()" class="badge badge-default badge-pill"><a style="color:red;" >!</a></span>
+    <span  (click)="alert()" class="badge badge-primary badge-pill" style="background-color:red;"><a style="color:white;">!</a></span>
   </li>
   
 </ul>

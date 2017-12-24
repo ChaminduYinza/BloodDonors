@@ -46,8 +46,12 @@ showAlert(message,type) {
       this.showAlert('Invalid login details','Oops!');
     }
   }
+
+  splash = true;
+
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    setTimeout(() => this.splash = false, 4000);
   }
 
 }

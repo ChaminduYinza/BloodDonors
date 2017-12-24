@@ -24,6 +24,7 @@ user:any = {};
   }
 
   ionViewDidLoad() {
+    this.bGroup=this.getBloodGroup(this.userArray.bloodgroup);
   
   }
 
@@ -63,8 +64,9 @@ user:any = {};
     this.user.password = this.userArray.password;
     this.user.bloodgroup = this.userArray.bloodgroup;
     localStorage.setItem('userArray',JSON.stringify(this.user));
+    this.bGroup=this.getBloodGroup(this.userArray.bloodgroup);
     window.location.reload;
-     this.bGroup=this.getBloodGroup(this.userArray.bloodgroup);
+     
  this.showAlert('Successfully edited','Success!');
   }
 

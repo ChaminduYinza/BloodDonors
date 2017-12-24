@@ -1,0 +1,51 @@
+    <ion-header>
+
+  <ion-navbar class="bar-positive" align-title="center">
+    <ion-title >FIND DONORS</ion-title>
+    
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+   <ion-card>
+      
+      <ion-card-content>
+         <ion-list inset>
+            <div class="input-group">
+               <span class="input-group-addon">Blood Group</span>
+               <ion-select [(ngModel)]="user.bloodgroup" style="border:1px solid #cccccc;" class="bloodgroup">
+               <ion-option value="aPositive">A+</ion-option>
+               <ion-option value="aNegative">A-</ion-option>
+               <ion-option value="bPositive">B+</ion-option>
+               <ion-option value="bNegative">B-</ion-option>
+               <ion-option value="abposative">AB+</ion-option>
+               <ion-option value="abnegative">AB-</ion-option>
+               <ion-option value="oPositive">O+</ion-option>
+               <ion-option value="oNegative">O-</ion-option>
+               </ion-select>
+            </div>
+            <br/>
+            <div class="form-group">
+               <ion-input id="location" type="text"  [(ngModel)]="location" name="location" placeholder="Location" class="local" style="height: 50px;
+    border:1px solid #cccccc;border-radius: 5px;"> </ion-input>
+            </div>
+             <div style="display: flex;  flex-direction:row">
+              <label style="color:brown;padding-top:9px"> Same age only :</label>
+               <ion-toggle   style="color:black;margin-left:39px" checked="false"></ion-toggle>
+            </div>
+             <div style="display: flex;  flex-direction:row">
+              <label style="color:brown;padding-top:9px"> Find in blood bank :</label>
+               <ion-toggle   style="color:black;margin-left:15px" checked="false"></ion-toggle>
+            </div>
+
+            <br>
+            <div class="form-group">
+            <button type="submit"  (click)="find()" class="form-control btn btn-danger">Search</button>
+            </div>
+            <img src="./assets/imgs/bloodLogo.png"/>
+         </ion-list>
+      </ion-card-content>
+   </ion-card>
+</ion-content>

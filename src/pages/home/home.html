@@ -13,13 +13,14 @@
 <div class = "row icon-row">
  
             <div class = "border col text-center" >
-              <button (click)="redirect('Request blood')" class="btn btn-default" style="border: none;"><img  src="./assets/imgs/add-new-document.png" width="50" height="50" alt="submit" /></button>
+<!--                   <button ion-button color="light" [@bounce]="bounceState"  class="btntr" (click)="toggleBounce()">Bounce!</button> -->
+              <button color="light" [@fade]="fadeState" (click)="redirect('Request blood')" class="btn btn-default" style="border: none;"><img  src="./assets/imgs/add-new-document.png" width="50" height="50" alt="submit" /></button>
               <p class="title">Request blood</p>
             </div>
  
  
             <div class = "border col text-center">
-              <button (click)="redirect('Mark as donor')" class="btn btn-default" style="border: none;"><img border src="./assets/imgs/add-user.png" width="50" height="50" alt="submit" /></button>
+              <button [@fade]="fadeState" color="light" (click)="redirect('Mark as donor')" class="btn btn-default" style="border: none;"><img border src="./assets/imgs/add-user.png" width="50" height="50" alt="submit" /></button>
               <p class="title">Mark as donor</p>
             </div>
  
@@ -29,13 +30,13 @@
           <div class = "row icon-row">
  
             <div class = "border col text-center">
-              <button (click)="redirect('Find donors')" class="btn btn-default" style="border: none;"><img src="./assets/imgs/search.png" width="50" height="50" alt="submit" /></button>
+              <button [@fade]="fadeState" color="light" (click)="redirect('Search donors')" class="btn btn-default" style="border: none;"><img src="./assets/imgs/search.png" width="50" height="50" alt="submit" /></button>
               <p class="title">Find donors</p>
             </div>
  
  
           <div class = "border col text-center">
-              <button (click)="redirect('Blood bank data')"  class="btn btn-default" style="border: none;"><img src="./assets/imgs/bank-building.png" width="50" height="50" alt="submit" /></button>
+              <button [@fade]="fadeState" color="light" (click)="redirect('Blood bank data')"  class="btn btn-default" style="border: none;"><img src="./assets/imgs/bank-building.png" width="50" height="50" alt="submit" /></button>
               <p class="title">Blood bank data</p>
             </div>
  
@@ -45,13 +46,13 @@
           <div class = "row icon-row">
  
               <div class = "border col text-center">
-              <button (click)="redirect('Settings')"   class="btn btn-default" style="border: none;"><img src="./assets/imgs/settings.png" width="50" height="50" alt="submit" /></button>
+              <button [@fade]="fadeState" color="light" (click)="redirect('Settings')"   class="btn btn-default" style="border: none;"><img src="./assets/imgs/settings.png" width="50" height="50" alt="submit" /></button>
               <p class="title">Settings</p>
             </div>
  
  
           <div class = "border col text-center">
-              <button (click)="redirect('Blood compatability')" class="btn btn-default" style="border: none;"><img src="./assets/imgs/medical-kit.png" width="50" height="50" alt="submit" /></button>
+              <button [@fade]="fadeState" color="light" (click)="redirect('Blood compatability')" class="btn btn-default" style="border: none;"><img src="./assets/imgs/medical-kit.png" width="50" height="50" alt="submit" /></button>
               <p class="title" style="padding-right:-1px;" >Blood Compatability</p>
             </div>
 
@@ -59,6 +60,7 @@
  
           </div>
            <p class="title" style="text-align:center !important;">BE A HERO AND SAVE A LIFE</p>
- 
+
+
 </section>
 </ion-content>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { AlertController } from 'ionic-angular';
 /**
  * Generated class for the FindDonorsPage page.
  *
@@ -8,12 +8,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+
+
 @Component({
   selector: 'page-find-donors',
   templateUrl: 'find-donors.html',
 })
 export class FindDonorsPage {
+
+
+
+
   userJSON:any = [
   {
     Name:"Randy Rushan",
@@ -43,11 +48,20 @@ export class FindDonorsPage {
   }
 ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public alertCtrl: AlertController,public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FindDonorsPage');
+  }
+
+  alert() {
+    let alert = this.alertCtrl.create({
+      title: 'Details',
+      subTitle:'Contact : 0774273954',
+      buttons: ['CALL']
+    });
+    alert.present();
   }
 
 }

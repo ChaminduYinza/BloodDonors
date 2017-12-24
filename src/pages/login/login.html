@@ -1,28 +1,29 @@
     <ion-header>
 
-  <ion-navbar>
+<!--   <ion-navbar class="bar-positive" align-title="center">
     <ion-title >LOGIN</ion-title>
     
-  </ion-navbar>
+  </ion-navbar> -->
 
 </ion-header>
 
 <ion-content>
 
    <ion-card>
-      <img src="./assets/imgs/bloodLogo.PNG"/>
+      <img src="./assets/imgs/bloodLogo.png"/>
       <ion-card-content>
          <ion-list inset>
+
             <div class="input-group">
                <span class="input-group-addon"><span class="glyphicon glyphicon-phone-alt" style="color:red;size:10px;"></span></span>
-               <ion-input id="Mobile" type="number" class="form-control" [(ngModel)]="mobile" name="Mobile" placeholder="Mobile Number" required> </ion-input>
+               <ion-input id="Mobile" type="number"   class="form-control" [(ngModel)]="mobile" name="Mobile" placeholder="Mobile Number" required> </ion-input>
             </div>
             <br/>
             <div class="input-group">
                <span class="input-group-addon"><i class="glyphicon glyphicon-lock" style="color:red;"></i></span>
-               <ion-input id="password" type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Password" required> </ion-input>
+               <ion-input id="password"  type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Password" required> </ion-input>
             </div>
-            <a style="margin-left:175px;" routerLink="/" class="alc">Forget password?</a>
+            <a style="float:right;text-decoration:underline" routerLink="/" class="alc">Forget password?</a>
             <br>
             <button type="submit"  (click)="login()" class="buttonclass btn btn-danger">Log in</button>
             <p style="color:black;">Don't have an account? <a style="color:red;" (click)="register()"routerLink="/" class="alc">Sign up</a>  </p>
